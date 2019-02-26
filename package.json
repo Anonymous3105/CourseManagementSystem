@@ -1,0 +1,24 @@
+{
+  "name": "course_management_system",
+  "version": "1.0.0",
+  "description": "A simple university course management system using nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anonymous3105/CourseManagementSystem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anonymous3105/CourseManagementSystem/issues"
+  },
+  "homepage": "https://github.com/Anonymous3105/CourseManagementSystem#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "joi": "^14.3.1",
+    "pug": "^2.0.3"
+  }
+}
