@@ -1,11 +1,11 @@
 .form {
-    margin: 2%;
-    padding: 1%;
+    margin: 1%;
+    padding: 0.5%;
 }
 
 .form > * {
     padding: 0.5%;
-    margin: 1%;
+    margin: 0.5%;
 }
 
 input[type=text] {
