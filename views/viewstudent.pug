@@ -1,0 +1,25 @@
+html
+	head
+		link(href="/css/base.css" rel="stylesheet")
+	body
+		div(class="container")
+			div(class="box")
+				h1 Student View Page
+				p Welcome to the student view page. The student details are listed below: 
+			
+			div(class="box")
+				table
+					tr  
+						th Student ID
+						th Student First Name
+						th Student Last Name
+					tr
+						td #{student.id}
+						td #{student.fname}
+						td #{student.lname}
+			
+			div(class="box")
+				p The courses enrolled by the student are:
+				ul
+					each course_id in student.course_list
+						li= course_id

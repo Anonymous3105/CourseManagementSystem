@@ -1,0 +1,34 @@
+html
+	head
+		link(href="/css/base.css" rel="stylesheet")
+	body
+		div(class="container")
+			div(class="box")
+				h1 University Course Management System
+				p Welcome to the university student course management portal.
+				p Made by Abhijeet Ambadekar (16BCE1156)
+			
+			div(class="box")
+				h3 Courses listed in the university
+				br
+				ul
+					each course in courses
+						li= course.id + " " + course.name
+				br
+				p 
+					a(href="/course") Goto Course Page
+			
+			div(class="box")
+				h3 Students enrolled in the university
+				br
+				ul
+					each student in students
+						li= student.id + " " + student.fname + " " + student.lname
+				br
+				p 
+					a(href="/student") Goto Student Page
+
+			div(class="box")
+				p
+					a(href="/map") Goto Mapping Page
+

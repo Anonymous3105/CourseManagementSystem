@@ -1,0 +1,16 @@
+body { 
+	margin: 2%;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.box {
+	padding: 0.25%;
+}
+
+.box > * {
+	padding: 0.25%;
+}

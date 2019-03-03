@@ -1,0 +1,36 @@
+html
+	head
+		link(href="/css/base.css" rel="stylesheet")
+		link(href="/css/form.css" rel="stylesheet")
+	body
+		div(class="container")
+			div(class="box")
+				h1 Student Page
+				p Welcome to the student page. Fill the details and choose any action
+			
+			div(class="box")
+				form(method="post", action="/student")
+					input(type="text", name="id", placeholder="Enter Student ID")
+					br
+					input(type="text", name="fname", placeholder="Enter First Name")
+					br
+					input(type="text", name="lname", placeholder="Enter Last Name")
+					br
+					label Action to perform 
+					select(name="action")
+						option(value="add") Add Student
+						option(value="delete") Delete Student
+						option(value="view") View Student
+					br
+					input(type="submit")
+			
+			div(class="box")
+				div(name="message" class="message") #{message}
+
+			div(class="box")
+				p 
+					a(href="/course") Goto Course Page
+				p
+					a(href="/map") Goto Mapping Page
+				
+			

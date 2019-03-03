@@ -1,0 +1,21 @@
+.form {
+    margin: 2%;
+    padding: 1%;
+}
+
+.form > * {
+    padding: 0.5%;
+    margin: 1%;
+}
+
+input[type=text] {
+    padding: 1%;
+}
+
+input[type=submit]{
+    padding: 1%;
+}
+
+.message {
+    color: #444;
+}

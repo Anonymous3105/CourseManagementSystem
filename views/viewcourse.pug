@@ -1,0 +1,25 @@
+html
+	head
+		link(href="/css/base.css" rel="stylesheet")
+	body
+		div(class="container")
+			div(class="box")
+				h1 Course View Page
+				p Welcome to the course view page. The course details are listed below: 
+			
+			div(class="box")
+				table
+					tr  
+						th Course ID
+						th Course Name
+						th Course Active Status
+					tr
+						td #{course.id}
+						td #{course.name}
+						td #{course._active_status}
+			
+			div(class="box")
+				p The students enrolled in the course are:
+				ul
+					each student_id in course.student_list
+						li= student_id
